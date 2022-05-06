@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(op) {
+            
+            console.log(op);
+            if (op ==="+") {
+                res.value = parseInt(v1.value) + parseInt(v2.value)
+            }
+            else if (op ==="-") {
+                res.value = parseInt(v1.value) - parseInt(v2.value)
+            }
+            else if (op ==="*") {
+                res.value = parseInt(v1.value) * parseInt(v2.value)
+            }
+            else if (op ==="/") {
+                res.value = parseInt(v1.value) / parseInt(v2.value)
+            }
+        }
+        
+    </script>
+
+    <h1>Calcuradora Simples</h1>
+    Valor1: <input type="text" id="v1" value="0"></br>
+    Valor2: <input type="text" id="v2" value="0"></br>
+    <input type="button" value="somar" onclick="calcular('+')"></br>
+    <input type="button" value="subtrair" onclick="calcular('-')"></br>
+    <input type="button" value="multiplicar" onclick="calcular('*')"></br>
+    <input type="button" value="dividir" onclick="calcular('/')"></br> 
+    Resultado: <input type="text" id="res" value="0" readonly></br>
+
+</body>
+</html>
